@@ -1,9 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import "./home.css";
 
 const Home = () => {
     return(
-        <div>
+        <div className="container">
             <nav>
                 <ul>
                     <li>
@@ -11,6 +12,9 @@ const Home = () => {
                     </li>
                     <li>
                         <Link to="/Atv02">Atividade 2 - Contador de Pessoas</Link>
+                    </li>
+                    <li>
+                        <Link to="/Atv03">Atividade 3 - Componentes</Link>
                     </li>
                 </ul>
             </nav>

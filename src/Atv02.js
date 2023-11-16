@@ -1,13 +1,14 @@
 import {Link} from "react-router-dom";
 import Contador from "./Contador";
+import "./contador.css"
 
 export default function Atv02(){
     return(
         <>
-            <h1> Atividade 2 </h1>
+            <div className="voltar">
+                <Link to="/">VOLTAR</Link>
+            </div>
             <Contador/>
-            <br></br>
-            <Link to="/">Voltar</Link>
         </>
     )
 }

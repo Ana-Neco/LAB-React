@@ -5,10 +5,11 @@ import Letreiro from "./Letreiro";
 export default function Atv01(){
     return(
         <>
-            <h1> Atividade 1 </h1>
             <Relogio/>
             <Letreiro/>
-            <Link to="/">Voltar</Link>
+            <div className="voltar">
+                <Link to="/">VOLTAR</Link>
+            </div>
         </>
     )
 }

@@ -6,6 +6,13 @@ export default function MyApp()
     const [countHomem, setCountHomem] = useState(0);
     const [countMulher, setCountMulher] = useState(0);
 
+    // Função para lidar com a atualização do valor
+    const atualizarValor = () => {
+        // Atualiza o estado com um novo valor
+        setCountHomem(0);
+        setCountMulher(0);
+    };
+
     function handleIncrementHomem() {
         setCountHomem(countHomem + 1);
     }
@@ -25,16 +32,20 @@ export default function MyApp()
     const totalPessoas = countHomem + countMulher;
 
     return (
-        <div className='container'>
-            
-            <h2>TOTAL</h2>
-            <div className='counter'>
-                {totalPessoas}
-            </div>
-            
-            <div className='box'>
-                <MyButton count={countHomem} onIncrement={handleIncrementHomem} onDecrement={handleDecrementHomem} title="Homem" />
-                <MyButton count={countMulher} onIncrement={handleIncrementMulher} onDecrement={handleDecrementMulher} title="Mulher" />
+        <div className='container-box'>
+            <div className='box-count'>
+                
+                <h2>TOTAL</h2>
+                <div className='counter'>
+                    {totalPessoas}
+                </div>
+                <div className='atualiza'>
+                    <img src='/img/recarregar.png' onClick={atualizarValor}/>
+                </div>
+                <div className='box'>
+                    <MyButton count={countHomem} onIncrement={handleIncrementHomem} onDecrement={handleDecrementHomem} title="Homem" />
+                    <MyButton count={countMulher} onIncrement={handleIncrementMulher} onDecrement={handleDecrementMulher} title="Mulher" />
+                </div>
             </div>
         </div>
     );
@@ -44,7 +55,6 @@ export default function MyApp()
 function MyButton({ count, onIncrement, onDecrement, title })
 {
     return (
-       
 
         <div className='pessoa'>
             <div>

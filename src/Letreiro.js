@@ -25,7 +25,7 @@ function Letreiro() {
 
     return (
         <div className="letreiro-container">
-            <h1>Letreiro</h1>
+            <h2>Letreiro</h2>
             <p>{letreiroText}</p>
         </div>
     );

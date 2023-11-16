@@ -1,3 +1,30 @@
+.container-box
+{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.voltar a
+{
+    font-size: 1rem;
+    align-items: center;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    background: #000000;
+}
+
 .counter{
 
     display: flex;
@@ -19,17 +46,19 @@
     margin-top: 20px;
 }
 
-.container
+.box-count
 {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
     box-shadow: 4px 3px 0px 0px;
-    padding: 10px 50px;
+    padding: 10px 30px;
     border-radius: 10px;
     flex-direction: column;
+    width: 300px;
 }
+
 
 .pessoa
 {
@@ -37,4 +66,13 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
+}
+
+.atualiza 
+{
+    position: relative;
+    bottom: 40px;
+    left: 100px;
+    cursor: pointer;
+
 }

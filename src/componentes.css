@@ -1,0 +1,50 @@
+.photo, .kath
+{
+    width: 100px;
+    padding: 5px;
+}
+
+.caixa
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.avatar
+{
+    border-radius: 50%;
+    
+}
+
+.alinhar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.alinhar p
+{
+    margin-left: 20px;
+    
+}
+
+.borda
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 15px;
+    width: 120px;
+    margin-top: 15px;
+}
+
+.organiza
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
