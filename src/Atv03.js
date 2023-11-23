@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import Componentes from "./Componentes";
-import "./componentes.css"
+import "./componentes.css";
 
 export default function Atv03(){
     return(

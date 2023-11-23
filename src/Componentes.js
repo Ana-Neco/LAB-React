@@ -12,11 +12,17 @@ export default function Componentes() {
     return (
         <div className='organiza'>
             <Profile />
+            <br></br>
             <Convertendo />
+            <br></br>
             <Card />
+            <br></br>
             <Item />
+            <br></br>
             <Lista />
+            <br></br>
             <Receita />
+            <br></br>
             <Cups />
         </div>
     );

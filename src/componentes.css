@@ -43,8 +43,9 @@
 
 .organiza
 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
